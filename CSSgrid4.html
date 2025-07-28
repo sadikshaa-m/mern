@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            /* height: 200vh;
+            width: 200vh; */
+        }
+        .container{
+            width: 650px;
+            height: 550px;
+            /* height: 100px; */
+            /* width: 500px; */
+            background-color: rgb(176, 224, 244);
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            /* gap: 10px; */
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 250px 250px;
+            padding: 40px;
+            row-gap: 10px;
+            column-gap: 5px;
+        }
+        .box{
+            width: 100%;
+            /* height: fit-content; */
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 10px;
+            display: grid
+            /* flex-direction: column; */
+            justify-content: center;
+            /* align-items: center; */
+            /* padding: 10px; */
+
+        }
+        h3{
+            margin: 10px;
+        }
+        p{
+            margin: 10px;
+        }
+        button{
+            /* width: 90px; */
+            padding: 5px;
+            color: white;
+            background-color: rgb(119, 119, 244);
+            border: none;
+            justify-self: center;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>MY Services</h1>
+    <div class="container">
+        
+        <div class="box bx1">
+            <!-- <i class="fa-solid fa-code"></i> -->
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, cupiditate!</p>
+            <button>Read More</button>
+        </div>
+        <div class="box bx2">
+            <!-- <i class="fa-solid fa-paintbrush"></i> -->
+            <h3>UI/UX Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, tempore.</p>
+            <button>Read More</button>
+        </div>
+        <div class="box bx3">
+            <!-- <i class="fa-solid fa-palette"></i> -->
+            <h3>Graphic Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, tempore.</p>
+            <button>Read More</button>
+        </div>
+        <div class="box bx4">
+            <!-- <i class="fa-solid fa-palette"></i> -->
+            <h3>Graphic Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, tempore.</p>
+            <button>Read More</button>
+        </div>
+        <div class="box bx5">
+            <!-- <i class="fa-solid fa-desktop"></i> -->
+            <h3>Video Editing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, tempore.</p>
+            <button>Read More</button>
+        </div>
+        <div class="box bx6">
+            <!-- <i class="fa-regular fa-camera"></i> -->
+            <h3>Photography</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, tempore.</p>
+            <button>Read More</button>
+        </div>
+    </div>
+    
+</body>
+</html>

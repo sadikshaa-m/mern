@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            /* justify-items: center; */
+        }
+        .container{
+            max-width: 500px;
+            border: 1px solid white;
+            background-color: rgb(1, 1, 64);
+            padding: 40px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px 100px;
+            gap: 10px;
+            display: grid;
+            margin: 0 auto;
+            
+
+        }
+        .bx1{
+            background-color: green;
+            grid-row: span 3;
+            
+            
+        }
+        .bx2{
+            background-color: green;
+            grid-column: span 2;
+            display: grid;
+            /* place item le both horizontally ra vertically milaucha */
+            place-items: center;
+        }
+        .bx3{
+            background-color: red; 
+        }
+        .bx4{
+            background-color: yellow;
+        }
+        .bx5{
+            background-color: red;
+        }
+        .bx6{
+            background-color: green;
+            grid-row: span 2;
+        }
+        .bx7{
+            background-color: red;
+        }
+        .bx8{
+            background-color: yellow;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bx1">
+            <h3>1</h3>
+        </div>
+        <div class="bx2">
+             <h3>2</h3>
+        </div>
+        <div class="bx3">
+             <h3>3</h3>
+        </div>
+        <div class="bx4">
+             <h3>4</h3>
+        </div>
+        <div class="bx5">
+             <h3>5</h3>
+        </div>
+        <div class="bx6">
+             <h3>6</h3>
+        </div>
+        <div class="bx7">
+             <h3>7</h3>
+        </div>
+        <div class="bx8">
+             <h3>8</h3>
+        </div>
+
+    </div>
+    
+</body>
+</html>

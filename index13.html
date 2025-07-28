@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- nav tag bhitra page route huni kura matra halni ho -- nav tag ma use anchor tag-->
+    <style>
+        *{
+            margin: 0;
+
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            /* margin-top: 20px; */
+            /* margin-bottom: 20px; */
+            background-color: black;
+            justify-content: center;
+            align-items: center;
+            margin: 0 30px;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: navy;
+            color: white;
+            
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            
+        }
+        nav{
+            gap: 40px;
+            display: flex;
+            
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .auth{
+            gap: 25px;
+            display: flex;
+        }
+        button{
+            border: none;
+        }
+        .login{
+            background-color: transparent;
+            color: #7E8B9B;
+        }
+        .signin{
+            background-color: rgb(136, 205, 34);
+            color: white;
+            padding: 7px 15px;
+            border-radius: 5px;
+        }
+        /* section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+             background-color: navy;
+            color: white;
+        } */
+         .dis-sec{
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            background-color: navy;
+            color: white;
+            gap: 50px;
+            padding-left: 50px;
+            
+        
+         }
+         .dis-sec h1{
+            font-size: 50px;
+            color: white;
+
+         }
+         .dis-sec p{
+            color: #7E8B9B;
+            padding: 30px 0;
+         }
+         img{
+            border-radius: 30px;
+            width: 50%;
+            height: 50%;
+         }
+         .demo{
+            display: flex;
+             color: white;
+             background-color:rgb(136, 205, 34); 
+            padding: 10px 20px;
+            border-radius: 5px;
+         }
+         .button{
+            display: flex;
+            gap: 30px;
+            border: none;
+         }
+         .signup{
+            background-color: transparent;
+            color: #7E8B9B;
+
+         }
+         .dis-img img{
+            
+            margin-bottom: 30px;
+            margin-top: 30px;
+            margin-right: 50px;
+            margin-left: 30px;
+            text-wrap: wrap;
+            text-shrink
+         }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-brands fa-font-awesome"></i>
+            <h1>Flex</h1>
+        </div>
+        <nav>
+            <a href="">Products</a>
+            <a href="">Features</a>
+            <a href="">Resources</a>
+            <a href="">Pricing</a>
+        </nav>
+        <div class="auth">
+        <button class="login">Log In</button>
+        <button class="signin">Sign Up</button>
+
+      </div>
+    </header>
+
+    <section class="dis-sec">
+        <div class="info">
+            <h1>A small business is only as good as its tools</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quibusdam reiciendis ea aut porro, sunt repellat tempora autem, id, nisi amet possimus! Ad, culpa temporibus!</p>
+            <div class="button">
+            <button class="demo">Request a Demo</button>
+            <button class="signup">Sign Up</button>
+            </div>
+
+        </div>
+        <div class="dis-img">
+            <img src="https://plus.unsplash.com/premium_photo-1752502981932-16a2c0ae9da1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 400px; height: 400px; ">
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            margin: 0;
+            min-height: 100vh;
+        }
+        .box{
+            background-color: rgb(220, 232, 243);
+            justify-content: center;
+            align-items: flex-start;
+            display: flex;
+            gap: 30px;
+            /* height: auto; */
+            max-width: 900px;
+            padding: 70px 70px 50px 70px;
+            /* text-wrap: wrap; */
+        }
+        .box1{
+            background-color: rgb(248, 248, 248);
+            height: 400px;
+            width: 30%;
+            justify-self: center;
+            align-self: flex-start;
+            border: 0 solid wheat;
+            box-shadow: 2px 2px 5px 1px rgb(217, 209, 195);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            /* text-wrap: wrap; */
+            
+
+        }
+        .box img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            padding-top: 0;
+            margin-bottom: 10px;
+            /* border-top-left-radius: 20px ; */
+            /* border-top-right-radius: 20px; */
+
+            
+        }
+        h3{
+            margin-top: 0;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        .box p{
+            /* padding: 10px; */
+            margin-left: 10px;
+            justify-self: center;
+            margin-bottom: 20px;
+            margin-right: 10px;
+            font-size: 15px;
+            
+        }
+        #name{
+            font-size: 12px;
+            color: rgb(155, 155, 155);
+            /* padding-bottom: 20px; */
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">
+            <img src="https://media.istockphoto.com/id/808022474/photo/a-dog-smelling-a-flower.jpg?s=612x612&w=0&k=20&c=euhF5AqTC3NAjrVo6KjgpUKnji96QoPFnxSf5R9j9Cs=" alt="">
+            <h3>Created by You, July Edition</h3>
+            <p>The dog joyfully chased toys, wagged its tail, and playfully pounced, spreading happiness and boundless energy.
+            </p>
+            <p id="name">MELODY NIEVES</p>
+        </div>
+        <div class="box1">
+            <img src="https://images.unsplash.com/photo-1604916851289-390266e08c07?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YWxpZW58ZW58MHx8MHx8fDA%3D" alt="">
+            <h3>How to Code a Scrolling "Alien Lander" Website</h3>
+            <p>The alien showed kindness, curiosity, and warmth, quickly forming peaceful bonds with humans and animals alike.</p>
+            <p id="name">KEZZ BRACEY</p>
+        </div>
+    </div>
+    
+</body>
+</html>

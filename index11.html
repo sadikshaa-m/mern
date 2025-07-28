@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Work</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 10px;
+        }
+        .box{
+            height: 300px;
+            width: 500px;
+            border: 1px solid black;
+            border-radius: 20px;    
+            /* display: flex; */
+            position: relative;
+            /* z-index: 3; */
+        }
+        img{
+            height: 100%;
+            width: 50%;
+            /* display: flex; */
+            /* z-index: 1; */
+            position: absolute;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+
+        }
+        /* .bx img{ */
+        /* width: 50%; */
+        /* right: 50%; */
+        /* background-size: contain; */
+        /* height: 100%; */
+        /* position: absolute; */
+        /* z-index: 2; */
+        /* } */
+        .bx1{
+            height: 100%;
+            width: 50%;
+            justify-self: right;
+            /* width: fit-content;
+            height: fit-content; */
+            /* background-image: url(https://www.shutterstock.com/image-illustration/checkered-tablecloth-background-light-grey-260nw-517949632.jpg);
+            background-repeat: no-repeat;
+            background-size: cover; */
+            position: absolute;
+            left: 50%;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: wheat;
+            
+
+        }
+        .bx1 .all{
+            display: flex;
+            gap: 15px;
+            color: red;
+            margin: 10px;
+            /* height: fit-content;
+            width: fit-content; */
+            font-size: 10px;
+        }
+        h1{
+            margin:10px;
+            font-size: 20px;
+            margin-left: 15px;
+            text-align: center;
+        }
+        p{
+            margin: 20px;
+            font-size: 15px;
+            letter-spacing: 2px;
+            /* text-align: center; */
+        }
+        h4{
+            margin-bottom: 10px;
+            /* margin-left: 10px; */
+        }
+        .profile{
+            height: 20px;
+            width: 20px;
+            background-color: black;
+            border-radius: 50%;
+        }
+        .bottom{
+            display: flex;
+            gap: 10px;
+            margin-left: 20px;
+            /* margin-top: 10px; */
+        }
+        h4 em{
+            gap: 10px;
+            color: rgb(71, 71, 71);
+        }
+
+            
+    </style>
+</head>
+<body>
+    <div class="box">
+
+        <!-- <div class="bx"> -->
+            <img src="https://i.pinimg.com/474x/09/0b/fc/090bfcf20aab94c4d4e95a05b11af61f.jpg" alt="">
+
+        <!-- </div> -->
+        <div class="bx1">
+            <div class="all">
+            <div class="a">INITIAL_LETTER</div>
+            <div class="b">INSPIRATION</div>
+            <div class="c">TYPOGRAPHY</div>
+            </div>
+            <h1>Getting Creative With Versal Letters</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus in natus quia modi? Culpa incidunt consequatur facere quod exercitationem quae aut totam, adipisci quas.</p>
+            <br>
+            <div class="bottom">
+                <div class="profile">
+
+                </div>
+                <h4>Andy Clarke &nbsp;<em>on july21</em></h4>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

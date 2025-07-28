@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- flex le content horizontally or vertically arrange garna milcha (one direction ma) -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0 auto;
+            padding: 10px;
+        }
+        
+        .box{
+        max-width: 500px;
+        height: 200px;
+        /* height: 50px; */
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        gap: 10px;
+        flex-direction: column;
+        
+        }
+        .bx1{
+            
+            background-color: rebeccapurple;
+           align-self: center;
+        }
+        
+        .bx2{
+            
+            align-self:center;
+            background-color: red;
+            
+        }
+        .bx3{
+            
+            background-color: pink;
+           
+        }
+        .bx4{
+            
+            
+            background-color: orange;
+            
+        }
+        .bx5{
+            
+            background-color: green;
+            
+        }
+        .bx6{
+            
+            background-color: blue;
+          
+        }
+
+
+        
+        .box2{
+            height: 300px;
+            max-width: fit-content;
+            /* border: 0.5px solid rgb(241, 236, 227); */
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            background-color: white;
+            
+
+        }
+        .item{
+            flex-basis: 200px;
+            flex-shrink: 0;
+            height: 100%;
+            border: 1px solid wheat;
+            background-color: rgb(238, 229, 229);
+            border-radius: 10px;
+
+            
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+
+        
+        .item4{
+            justify-items: center;
+        }
+        .fa-heart{
+            color: rgb(245, 39, 39);
+        }
+        .fa-instagram{
+            color: palevioletred;
+        }
+        h1{
+            text-align: justify;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box">
+    
+    <div class="bx1">
+        <h3>Hello hi1</h3>
+    </div>
+    <div class="bx2">
+        <h3>Hello hi2</h3>
+    </div>
+    <div class="bx3">
+        <h3>Hello hi3</h3>
+    </div>
+    <div class="bx4">
+        <h3>Hello hi4</h3>
+    </div>
+    <div class="bx5">
+        <h3>Hello hi5</h3>
+    </div>
+    <div class="bx6">
+        <h3>Hello hi6</h3>
+    </div>
+
+    </div> -->
+    <h1>Follow Us On Instagram</h1>
+    <div class="box2">
+        <div class=" item items1">
+            
+            <p style="margin-top: 5px;">@saturn_ui &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-instagram"></i></p>
+            <img src="https://img.joomcdn.net/444815cc94198092ae6a20f69b61fb80a636fced_original.jpeg" style="height: 200px; width: 200px;" alt="">
+            <p style="font-weight: bold; margin-bottom: 10px;">This is example post</p>
+            <p><i class="fa fa-heart"></i>&nbsp;1300</p>
+        </div>
+        <div class="item items2">
+            <p style="margin-top: 5px;">@saturn_ui &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-instagram"></i></p>
+            <img src="https://i.pinimg.com/736x/37/eb/8c/37eb8c4c75970f3d06e4752e61e55139.jpg" style="height: 200px; width: 200px" alt="">
+             <p style="font-weight: bold; margin-bottom: 10px;">This is example post</p>
+             <p><i class="fa fa-heart"></i>&nbsp;1300</p>
+        </div>
+        <div class="item items3">
+             <p style="margin-top: 5px;">@saturn_ui &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-instagram"></i></p>
+            
+            <img src="https://www.shutterstock.com/image-vector/watercolor-doll-illustration-toys-cute-600nw-2422273227.jpg" style="height: 200px; width: 200px" alt="">
+             <p style="font-weight: bold; margin-bottom: 10px;">This is example post</p>
+             <p><i class="fa fa-heart"></i>&nbsp;1300</p>
+        </div>
+        <div class="item items4">
+            <p style="margin-top: 5px;">@saturn_ui &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-instagram"></i></p>
+            <img src="https://i.pinimg.com/550x/90/a1/c6/90a1c6d988b7cc10ef0ad8775e77bc03.jpg"style="height: 200px; width: 250px=" alt="">
+            <p style="font-weight: bold; margin-bottom: 10px;">This is example post</p>
+             <p><i class="fa fa-heart"></i>&nbsp;1300</p>
+            
+             
+        </div>
+    </div>
+    
+</body>
+</html>

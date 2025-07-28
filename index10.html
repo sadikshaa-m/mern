@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 10px;
+        }
+        .bx{
+            height: 300px;
+            width: 300px;
+            background-color: purple;
+            animation: anim 5s ease-in 0s infinite;
+        }
+        @keyframes anim {
+            20%{
+                background-color: purple;
+            }
+            50%{
+                background-color: brown;
+                transform: translateY(80px);
+            }
+            70%{
+                background-color: chocolate;
+                transform: rotateX(60deg) 
+             }
+            100%{
+                background-color: mediumspringgreen;
+            }
+            
+            h2{
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bx">
+        <h2>Hello</h2>
+    </div>
+    
+</body>
+</html>

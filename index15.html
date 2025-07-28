@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>microsoft web-page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 60px;
+        
+        }
+        .left{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+           
+
+        }
+        
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline 1px black;
+            text-underline-offset: 1px;
+        }
+        nav{
+            display: flex;
+            /* gap: 20px; */
+            flex-wrap: wrap;
+            row-gap: 10px;
+            column-gap: 20px;
+        }
+        .right{
+            display: flex;
+            gap: 20px;
+        }
+        .dis-sec{
+            height: 40vw;
+            background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Laptop-13-inch-1Ed-Detail-Ocean-Open-Copilot-PC:VP4-1399x600);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .dis-info{
+            top: 245px;
+            left: 100px;
+            position: absolute;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 25px;
+            font-family: sans-serif;
+            font-size: 13px;
+            
+
+
+        }
+        
+        .dis-info button{
+            background-color: rgb(91, 91, 240);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 2px;
+            font-family: sans-serif;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px 30px 20px 0;
+        }
+        .dis-info button:hover{
+            background-color: rgb(33, 33, 242);
+        }
+        .dis-info a{
+            color: #000000;
+            text-underline-offset: 1px;
+           
+        }
+        .dis-info a:hover{
+            text-decoration: underline 0.5px;
+        }
+        .dis-info h5{
+            letter-spacing: 1px;
+            font-size: 30px;
+        }
+        .dis-info p{
+            word-spacing: 3px;
+            line-height: 20px;
+            letter-spacing: 1px;
+
+        }
+        .info{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: #000000;
+            font-weight: 600;
+            font-size: 15px;
+            font-family: sans-serif;
+            letter-spacing: 0.5px;
+            background-color: #9BF00B;
+            padding: 10px 14px;
+        }
+        .info a:hover{
+            text-decoration: underline 1px;
+            text-underline-offset: 1px;
+        }
+        .info a{
+            padding: 10px;
+           
+           
+        }
+        .icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px;
+            gap: 10px;
+        }
+        .boxes{
+           
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+            margin: 30px;
+        
+        }
+        .bx1, .bx2, .bx3, .bx4{
+            border-radius: 4px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+             display: flex;
+            flex-direction: column;
+
+        }
+        
+        .boxes img{
+            height: 180px;
+            width: 100%;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            margin-bottom: 10px;
+        
+            
+        }
+        .boxes h2{
+            margin: 10px;
+        }
+        .boxes p{
+            margin: 10px;
+            text-align: start;
+            height: 100px;
+        }
+        .bx2 .shop-btn{
+        
+        }
+        .shop-btn{
+            background-color: #005CA5;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            padding: 5px 10px;
+            border-radius: 3px;
+            border: none;
+            margin: 30px;
+            cursor: pointer;
+            align-self: flex-start;
+            line-height: 19px;
+            
+
+
+        }
+        .shop-btn:hover{
+            color: white;
+            background-color: darkblue;
+        }
+        .section1{
+            margin: 70px 30px;
+            position: relative;
+        }
+        .dis-sec1{
+            height: 40vw;
+            background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Copilot-Native-App-ROW:VP4-1260x600);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .dis-info1{
+             display: flex;
+            flex-direction: column;
+            align-items: start;
+            left: 100px;
+            top: 170px;
+            position: absolute;
+            max-width: 350px;
+            gap: 25px; 
+        }
+        
+        .dis-info1 p{
+           
+             margin: 7px;
+            height: 50px;
+        }
+        .dis-info1 button{
+
+             background-color: rgb(91, 91, 240);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 2px;
+            font-family: sans-serif;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .dis-info1 button:hover{
+            background-color: rgb(33, 33, 242);
+        }
+       .business{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        
+       }
+       .business h3{
+        margin-left: 30px;
+        margin-bottom: 0;
+
+       }
+       .box{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* border: 1px solid black; */
+        gap: 20px;
+        margin: 30px;
+        margin-top: 15px;
+       }
+       .box img{
+        width: 100%;
+        margin: 0 0 10px 0;
+       }
+       .box h2{
+        margin: 40px 20px 15px 20px;
+        margin-bottom: 30px;
+        /* height: 40px; */
+       }
+       .box p{
+        margin: 20px;
+        margin-top: 0;
+        margin-bottom: 30px;
+        letter-spacing: 0.2px;
+        text-align: start;
+        height: 70px;
+       }
+       .box1, .box2, .box3, .box4{
+        height: 100%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+       }
+       .exploremore{
+        display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+        /* flex-direction: column; */
+        /* border: 1px solid black; */
+        gap: 20px;
+        margin: 10px 30px;
+        
+       }
+       .explore{
+       display: grid;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        /* gap: 20px; */
+
+        ;
+       }
+       .explore img{
+        width: 100%;
+        margin-bottom: 15px;
+        /* margin: 10px 0; */
+       }
+       .explore h2{
+        margin-bottom: 10px;
+        margin-left: 20px;
+       }
+       .explore p{
+        margin: 10px 10px 5px 20px;
+        line-height: 25px;
+       }
+       .explore button{
+        margin-left: 20px;
+        padding: 7px 10px;
+       }
+       .learnmore{
+        margin: 30px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        position: relative;
+
+       }
+       .div-image{
+        background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-AI-Reading-Coach:VP4-1260x600);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 540px;
+       }
+       .div-content{
+        padding: 20px;
+        top: 120px;
+        left: 100px;
+        position: absolute;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 25px;
+       }
+       .div-content h1{
+        margin: 10px;
+       }
+       .div-content p{
+        margin: 16px;
+        line-height: 25px;
+       }
+       .div-content button{
+        margin: 10px;
+       }
+
+       .socials{
+        margin: 30px;
+        padding: 30px 0;
+        display: flex;
+        gap: 20px;
+        /* position: relative; */
+       }
+       .socials p{
+        /* position: absolute; */
+        align-self: center;
+        font-size: 17px;
+       }
+
+       .bottom{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 48px;
+        background-color: #F2F2F2;
+        padding: 38px 24px;
+    }
+    .b1, .b2, .b3, .b4, .b5, .b6{
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+        padding: 10px;
+        font-size: 12px;
+        color: #616366;
+    }
+    .bottom h3{
+        color: #616161;
+        font-family: sans-serif;
+        letter-spacing: 0.2px;
+    }
+    .bottom a{
+                color: #616366;
+
+    }
+    .bottom a:hover{
+        color: #181818;
+        text-decoration: underline;
+        text-underline-offset: 0.5px;
+
+    }
+    .footer{
+        font-size: 13px;
+        color: #616366;
+    }
+    .chat{
+       display: flex;
+       position: fixed;
+       right: 0;
+       bottom: 0;
+       z-index: 5;
+       background-color: #0067B8;
+       color: white;
+       border-radius: 50%;
+       padding: 10px;
+       margin: 10px;
+      
+       
+    }
+    
+    
+        @media (max-width: 1185px){
+            .dis-info{
+                position: static;
+                max-width: 100vw;
+                padding: 15px;
+                box-shadow: rgba(99, 99, 0.2, 0px);
+            }
+            .dis-info1{
+                position: static;
+                max-width: 100vw;
+                padding: 15px;
+                box-shadow: rgba(99, 99, 0.2, 0px);
+            }
+            .dis-sec1{
+                background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Copilot-Native-App-ROW:VP2-859x540);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 350px;
+                
+                
+            }
+            .div-content {
+
+               max-width: 100vw;
+                padding: 15px;
+                box-shadow: rgba(99, 99, 0.2, 0px);
+                position: static;
+        }
+            .div-image{
+                background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-AI-Reading-Coach:VP2-859x540);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 350px;
+
+            }
+            .bottom{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+             .boxes{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            .dis-sec1{
+                background-size: 150%;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 100%;
+            }
+            .box{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            .exploremore{
+                display: grid;
+                grid-template-columns: 1fr;          
+            }
+        }
+        @media (max-width: 612px){
+            .left{
+                flex-direction: column;
+                row-gap: 10px;
+            }
+        }
+        @media(max-width: 800px){
+            .right{
+                display: none;
+            }
+        
+            nav{
+                display: none;
+            }
+            .icon{
+                font-size: 5px;
+            }
+            header{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+           
+        }
+
+        @media(max-width: 400px){
+            body{
+                background-color: rgb(236, 126, 126);
+            }
+        }
+        /* .links{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 20px;
+
+
+        } */
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="chat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#FFFFFF" viewBox="0 0 256 256"><path d="M168,112a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,112Zm-8,24H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16Zm72-8A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"></path></svg>
+         </div>
+    <header>
+        <div class="left">
+            <div class="logo">
+                <img height="23px" src="assets/logo.png" alt="">
+            </div>
+            <nav>
+                <a href="">Microsoft</a>
+                <a href="">Teams</a>
+                <a href="">Copilot</a>
+                <a href="">Windows</a>
+                <a href="">Surface</a>
+                <a href="">Xbox</a>
+                <a href="">Deals</a>
+                <a href="">Small Business</a>
+                <a href="">Support</a>
+            </nav>
+        </div>
+        <div class="right">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-regular fa-user"></i>
+        </div>
+
+    </header>
+    <div class="info">
+        <a href="">Get school tech for less. If you don't love it, return it, free extended returns through 10/1.</a>
+    </div>
+
+    <div class="section">
+        <div class="dis-sec"></div>
+        <div class="dis-info">
+            <h5>Trade in and get up to $500 cash back</h5>
+            <p>Get extra cash back, plus a 3-month trial of Microsoft 365 when you purchase a select new Surface Laptop, Copilot+ PC and trade in an eligible device. Offer ends 9/30.</p>
+            <div class="button">
+                <button>Shop Surface Laptop, Copilot+ PCs</button><B style="font-size: 16px;"><a href=""> Learn more about trade-ins ></B></a>
+            </div>
+        </div>
+    </div>
+    <div class="icon">
+        <i class="fa-regular fa-circle-pause" style="font-size: 16px;"></i>
+        <i class="fa-solid fa-angle-left "></i>
+        <i class="fa-solid fa-circle " style="font-size: 16px;"></i>
+        <i class="fa-regular fa-circle " style="font-size: 16px;"></i>
+        <i class="fa-solid fa-angle-right " style="font-size: 16px;"></i>
+    </div>
+    
+    <!-- <div class="links">
+        <a href="www.pinterest.com" target="_blank"<i class="fa-solid fa-laptop"></i>
+        <i class="fa-brands fa-xbox"></i>
+        <i class="fa-solid fa-keyboard"></i>
+        <i class="fa-solid fa-briefcase"></i>
+        <i class="fa-solid fa-laptop"></i>
+        <i class="fa-brands fa-microsoft"></i>
+
+    </div> -->
+
+    <div class="boxes">
+        <div class="bx1">
+            <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <h2>Keyboard</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat delectus, repellat ullam commodi repellendus, fugit accusantium nesciunt cumque alias dolores a doloremque voluptate veritatis eligendi.</p>
+            <button class="shop-btn">Shop Now</button>
+        </div>
+        <div class="bx2">
+            <img src="https://images.unsplash.com/photo-1616854675471-17b4fb2771b9?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <h2>Keyboard</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, repellat.
+            </p>
+            <button class="shop-btn">Shop Now</button>
+        </div>
+        <div class="bx3">
+            <img src="https://media.istockphoto.com/id/1167121861/photo/keyboard.jpg?s=1024x1024&w=is&k=20&c=oZwIAr9FcMxzwozS9Jq7uV4fY4hmGs3AmQMVjQIgD3c=" alt="">
+            <h2>Keyboard</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat delectus, repellat ullam commodi repellendus, fugit accusantium nesciunt cumque alias dolores a doloremque voluptate veritatis eligendi.</p>
+            <button class="shop-btn">Shop Now</button>
+        </div>
+        <div class="bx4">
+            <img src="https://media.istockphoto.com/id/1131141277/photo/computer-keyboard.jpg?s=1024x1024&w=is&k=20&c=bH28BwcDhNmeHNhYhEqsf0Y2fSC1uqO5-7XZXhkO6jE=" alt="">
+            <h2>Keyboard</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat delectus, repellat ullam commodi repellendus, fugit accusantium nesciunt cumque alias dolores a doloremque voluptate veritatis eligendi.</p>
+            <button class="shop-btn">Shop Now</button>
+        </div>
+    </div>
+    
+    <div class="section1">
+        <div class="dis-sec1"></div>
+        <div class="dis-info1">
+            <h1>Copilot is your AI companion</h1>
+            <p>Always by your side, ready to support you whenever and wherever you need it.</p>
+            <button>Download the Copilot app</button>
+            
+        </div>
+    </div>
+    <div class="business">
+        <h3 style="font-family: sans-serif; font-size: 25px;">For Business</h3>
+        <div class="box">
+            <div class="box1">
+                <img src="assets/card4.png" alt="">
+                <h2>Meet the latest Surface for Business Copilot+ PCs</h2>
+                <p>Portable, powerful, and packed with world-class security—introducing Surface Pro for Business, 12-inch and Surface Laptop for Business, 13-inch with Snapdragon® processors.</p>
+                <button class="shop-btn">Shop Surface Pro for Business now</button>
+            </div>
+            <div class="box2">
+                <img src="assets/card1.png" alt="">
+                <h2>Microsoft 365 Copilot</h2>
+                <p>Save time and focus on the things that matter most with AI in Microsoft 365 for business.</p>
+                <button class="shop-btn">Learn more</button>
+            </div>
+            <div class="box3">
+                <img src="assets/card2.png" alt="">
+                <h2>Visual Studio 2022</h2>
+                <p>Save time and focus on the things that matter most with AI in Microsoft 365 for business.</p>
+                <button class="shop-btn">Learn more</button>
+            </div>
+            <div class="box4">
+                <img src="assets/card3.png" alt="">
+                <h2>Join the era of AI</h2>
+                <p>Create, communicate, and code with the latest Microsoft AI solutions.</p>
+                <button class="shop-btn">Download VIsual Studio 2022</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="exploremore">
+        <!-- <h1>Explore more about AI and Copilot</h1> -->
+        <div class="explore explore1">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-AI-Students-Fight-Cybercrime?wid=834&hei=470&fit=crop" alt="">
+            <h2>Tapping students to fight cybercrime</h2>
+            <p>Learn how universities are training students on Microsoft security tools and AI to protect against cyberthreats.</p>
+            <button class="shop-btn">Uncover the details</button>
+        </div>
+        <div class="explore explore2">
+              <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-AI-15-Milestones?wid=834&hei=470&fit=crop" alt="">
+              <h2>15 Microsoft milestones that shaped AI</h2>
+              <p>From the launch of Bing to the development of Copilot, explore key innovations that shaped Microsoft’s vision for AI.</p>          
+              <button class="shop-btn">Find out more</button>
+        </div>
+        <div class="explore explore3">
+              <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-AI-Worklab-Hard-work-easier?wid=834&hei=470&fit=crop" alt="">
+              <h2>How AI makes hard work easier</h2>
+              <p>Dive into the surprising ways that Copilot reduces the mental effort of complex tasks and enhances quality of work.</p>       
+              <button class="shop-btn">Uncover the details
+              </button>
+        </div>
+
+
+    </div>
+
+    <div class="learnmore">
+        <div class="div-image"></div>
+        <div class="div-content">
+            <h1>Building literacy with AI</h1>
+            <p>Discover how Microsoft is redefining the fan experience and revolutionizing league operations through cutting-edge AI, data, and cloud innovation.</p>
+            <button class="shop-btn">Learn more</button>
+        </div>
+    </div>
+
+    <div class="icon">
+        <i class="fa-regular fa-circle-pause" style="font-size: 16px;"></i>
+        <i class="fa-solid fa-angle-left" style="font-size: 16px;"></i>
+        <i class="fa-solid fa-circle" style="font-size: 16px;"></i>
+        <i class="fa-regular fa-circle" style="font-size: 16px;"></i>
+        <i class="fa-solid fa-angle-right style="font-size: 16px;"></i>
+    </div>
+
+    <div class="socials">
+        <p>Follow Microsoft</p>
+        <a href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path></svg>
+        </a>
+        <a href="https://www.instagram.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path></svg></a>
+        <a href="https://www.x.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z"></path></svg></a>
+    </div>
+
+    <div class="bottom">
+        <div class="b1">
+            <h3>What's new</h3>
+                <a href="">Surface Pro</a>
+                <a href="">Surface Laptop</a>
+                <a href="">Surface Laptop Studio 2</a>
+                <a href="">Surface Laptop Go 3</a>
+                <a href="">Microsoft Copilot</a>
+                <a href="">AI in Windows</a>
+                <a href="">Explore Microsoft products</a>
+                <a href="">Windows 11 apps</a>
+        </div>
+        <div class="b2">
+            <h3>Education</h3>
+                <a href="">Devices for education</a>
+                <a href="">Microsoft in education</a>
+                <a href="">Microsoft Teams for Education</a>
+                <a href="">Microsoft 365 Education</a>
+                <a href="">How to buy for your school</a>
+                <a href="">Educator training and development</a>
+                <a href="">Deals for students and parents</a>
+                <a href="">AI for education</a>
+        </div>
+        <div class="b3">
+            <h3>Microsoft Store</h3>
+                <a href="">Account profile</a>
+                <a href="">Download Center</a>
+                <a href="">Microsoft Store support</a>
+                <a href="">Returns</a>
+                <a href="">Order tracking</a>
+                <a href="">Certified Refurbished</a>
+                <a href="">Microsoft Store Promise</a>
+                <a href="">Flexible Payments</a>
+        </div>
+        <div class="b4">
+            <h3>Business</h3>
+
+                <a href="">Microsoft Cloud</a>
+                <a href="">Microsoft Security</a>
+                <a href="">Dynamics 365</a>
+                <a href="">Microsoft 365</a>
+                <a href="">Microsoft Power Platform</a>
+                <a href="">Microsoft Teams</a>
+                <a href="">Microsoft 365 Copilot</a>
+                <a href="">Small Business</a>
+            
+        </div>
+        <div class="b5">
+            <h3>Developer & IT</h3>
+            
+                <a href="">Azure</a>
+                <a href="">Microsoft Developer</a>
+                <a href="">Microsoft Learn</a>
+                <a href="">Support for AI marketplace apps</a>
+                <a href="">Microsoft Tech Community</a>
+                <a href="">Azure Marketplace</a>
+                <a href="">AppSource</a>
+                <a href="">Visual Studio</a>
+            
+        </div>
+        <div class="b6">
+            <h3>Company</h3>
+        
+                <a href="">Careers</a>
+                <a href="">About Microsoft</a>
+                <a href="">Company news</a>
+                <a href="">Privacy at Microsoft</a>
+                <a href="">Investors</a>
+                <a href="">Diversity and inclusion</a>
+                <a href="">Accessibility</a>
+                <a href="">Sustainability</a>
+        </div>
+        <div class="footer">
+           <i class="fa-regular fa-copyright" style="color: #616366;"></i>&nbsp;&nbsp;Microsoft 2025
+        </div>
+        
+    </div>
+    
+   
+
+</body>
+</html>

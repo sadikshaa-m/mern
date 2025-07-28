@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Grid4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* to add a icon- header ma euta link halnu parcha(cdnj ma gayera) ani tyo icon ko size badauna class ma gayera fa-2xl/3xl banaunii ho */
+        body{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            max-width: 600px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(146, 210, 232);
+            text-align: center;
+            padding: 20px;
+        
+        }
+        .fa-solid{
+            
+            margin-top: 10px;
+            margin-bottom: ;
+            justify-self: center;
+        }
+        .fa-regular{
+             margin-top: 10px;
+            margin-bottom0: ;
+            justify-self: center;
+        }  
+        
+        .container h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 1.5px;
+        }
+        .box1{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+            
+        }
+        .box{
+            background-color: white;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgb(227, 224, 224);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        h3{
+            
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 12px;
+            margin-top: 0px;
+        }
+
+        button{
+            background-color: rgb(104, 104, 243);
+            border: none;
+            width: fit-content;
+            border-radius: 5px;
+            padding: 5px 8px;
+            justify-self: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Services</h1>
+        <div class="box1">
+            <div class="box bx1">
+            <i class="fa-solid fa-code fa-2xl"></i>
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, cupiditate!</p>
+            <button>Read More</button>
+            </div>
+            <div class="box bx2">
+            <i class="fa-solid fa-paintbrush fa-2xl"></i>
+            <h3>UI/UX Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, tempore.</p>
+            <button>Read More</button>
+            </div>
+            <div class="box bx3">
+            <i class="fa-solid fa-palette fa-2xl"></i>
+            <h3>Graphic Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, tempore.</p>
+            <button>Read More</button></div>
+            <div class="box bx4">
+            <i class="fa-solid fa-palette fa-2xl"></i>
+            <h3>Graphic Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, tempore.</p>
+            <button>Read More</button>
+            </div>
+            <div class="box bx5">
+            <i class="fa-solid fa-desktop fa-2xl"></i>
+            <h3>Video Editing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, tempore.</p>
+            <button>Read More</button>
+            </div>
+            <div class="box bx6">
+            <i class="fa-regular fa-camera fa-2xl"></i>
+            <h3>Photography</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, tempore.</p>
+            <button>Read More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
